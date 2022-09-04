@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Response<T> {
 
-    private Integer code;
+    private String code;
 
     private String message;
 
@@ -31,14 +31,14 @@ public class Response<T> {
     }
 
     public static <T> Response<T> ok(T result) {
-        return new Response<>(0, "请求成功", result, System.currentTimeMillis());
+        return new Response<>(WordConstant.OK, "请求成功", result, System.currentTimeMillis());
     }
 
     public static <T> Response<T> error(BaseException e) {
         return new Response<>(e.getCode(), e.getMessage(), null, System.currentTimeMillis());
     }
 
-    public static <T> Response<T> error(Integer code, String message) {
+    public static <T> Response<T> error(String code, String message) {
         return new Response<>(code, message, null, System.currentTimeMillis());
     }
 

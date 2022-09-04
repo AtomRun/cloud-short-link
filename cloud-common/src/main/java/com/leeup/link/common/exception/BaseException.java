@@ -16,9 +16,9 @@ import lombok.Setter;
 @SuppressWarnings("unused")
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class BaseException extends RuntimeException {
-    private Integer code;
+    private String code;
 
-    public BaseException(Integer code, String message, Object... args) {
+    public BaseException(String code, String message, Object... args) {
         super(args.length > 0 ? DefaultErrorFormat.format(message, args) : message);
         this.code = code;
     }
