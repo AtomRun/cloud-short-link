@@ -22,6 +22,17 @@
             <groupId>com.leeup</groupId>
             <artifactId>cloud-common</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.shardingsphere</groupId>
+                    <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
+                </exclusion>
+
+                <exclusion>
+                    <groupId>com.baomidou</groupId>
+                    <artifactId>mybatis-plus-generator</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 
