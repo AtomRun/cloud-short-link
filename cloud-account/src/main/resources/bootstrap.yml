@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: cloud-account
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 124.223.20.87:8848
+        group: short_link
+      config:
+        server-addr: 124.223.20.87:8848
+        file-extension: yml
+        shared-configs:
+          - data-id: spring-boot.yml
+          - data-id: spring-mybatis.yml
+          - data-id: spring-redis.yml
+          - data-id: cloud-account.yml
+        group: short_link
