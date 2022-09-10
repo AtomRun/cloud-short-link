@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.leeup.link.account.mapper.TrafficTaskMapper">
+<mapper namespace="com.leeup.shortlink.account.mapper.TrafficTaskMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.leeup.link.account.model.TrafficTaskEntity">
+    <resultMap id="BaseResultMap" type="com.leeup.shortlink.account.model.TrafficTaskEntity">
         <id column="id" property="id" />
         <result column="account_no" property="accountNo" />
         <result column="traffic_id" property="trafficId" />
