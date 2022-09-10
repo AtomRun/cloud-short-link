@@ -5,7 +5,6 @@ spring:
     nacos:
       discovery:
         server-addr: 124.223.20.87:8848
-        group: short_link
       config:
         server-addr: 124.223.20.87:8848
         file-extension: yml
@@ -13,5 +12,5 @@ spring:
           - data-id: spring-boot.yml
           - data-id: spring-mybatis.yml
           - data-id: spring-redis.yml
-          - data-id: cloud-account.yml
+          - data-id: account.yml
         group: short_link
