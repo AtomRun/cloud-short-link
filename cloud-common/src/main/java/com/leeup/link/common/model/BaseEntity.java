@@ -1,8 +1,9 @@
 package com.leeup.link.common.model;
 
 import com.baomidou.mybatisplus.annotation.TableField;
-import java.util.Date;
 import lombok.Data;
+
+import java.util.Date;
 
 @Data
 public class BaseEntity {

@@ -1,11 +1,11 @@
 package com.leeup.link.account.controller;
 
 
-import static com.leeup.link.account.Summary.SERVICE_NAME;
-import static com.leeup.link.account.Summary.VERSION;
-
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import static com.leeup.link.account.Summary.SERVICE_NAME;
+import static com.leeup.link.account.Summary.VERSION;
 
 /**
  * <p>

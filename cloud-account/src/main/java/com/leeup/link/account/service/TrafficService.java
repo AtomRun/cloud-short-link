@@ -1,9 +1,9 @@
 package com.leeup.link.account.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.leeup.link.account.model.TrafficEntity;
-import com.leeup.link.account.mapper.TrafficMapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.leeup.link.account.mapper.TrafficMapper;
+import com.leeup.link.account.model.TrafficEntity;
 import org.springframework.stereotype.Service;
 
 /**

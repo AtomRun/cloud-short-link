@@ -1,7 +1,7 @@
 package com.leeup.link.account.mapper;
 
-import com.leeup.link.account.model.TrafficEntity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.leeup.link.account.model.TrafficEntity;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
