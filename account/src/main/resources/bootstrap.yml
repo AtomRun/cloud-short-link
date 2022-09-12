@@ -8,9 +8,10 @@ spring:
       config:
         server-addr: localhost:8848
         file-extension: yml
+        namespace: your_namespace
         shared-configs:
           - data-id: spring-boot.yml
           - data-id: spring-mybatis.yml
           - data-id: spring-redis.yml
-          - data-id: link-account.yml
-        group: short_link
+          - data-id: sms.yml
+          - data-id: http.yml
