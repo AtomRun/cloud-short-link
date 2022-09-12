@@ -7,6 +7,7 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.web.client.RestTemplate;
 
 /**
@@ -22,13 +23,11 @@ public class SmsService {
     private final SmsConfigProperties smsConfig;
     private final RestTemplate restTemplate;
 
-
-    String key = "%s";
-
+    @Async
     public void send(String mobile, String templateId, String value) {
-        String URL_TEMPLATE = smsConfig.getSmsUrl() + "?" + "mobile=" + key + "&templateId=" + key + "&value=" + key;
+        String template = smsConfig.getSmsUrl() + "?mobile=%s&templateId=%s&value=%s";
         log.info("[短信发送],mobile={},templateId={},value={}", mobile, templateId, value);
-        String url = String.format(URL_TEMPLATE, mobile, templateId, value);
+        String url = String.format(template, mobile, templateId, value);
         HttpHeaders headers = new HttpHeaders();
         //最后在header中的格式(中间是英文空格)为Authorization:APPCODE 83359fd73fe94948385f570e3c139105
         headers.set("Authorization", "APPCODE " + smsConfig.getAppCode());

@@ -8,3 +8,6 @@
 为什么starter需要spring.factories?
 - 假如你依赖了一个包，他标注了@Service 这种注解，期望直接被扫描到，但只有在启动类下才会被springboot扫描到，
   而依赖的包往往包名不同，这个时候就扫描不到了，需要使用factories的方式
+
+并发量大的时候restTemplate可能会抛出超时异常
+- 方法做成异步
