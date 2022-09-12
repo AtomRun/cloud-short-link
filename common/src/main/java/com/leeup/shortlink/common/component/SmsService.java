@@ -35,6 +35,7 @@ public class SmsService {
         try {
             ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.POST, new HttpEntity<>(headers), String.class);
             if (response.getStatusCode().is2xxSuccessful()) {
+                log.info("[发送成功],url={},response={}", url, response);
                 return;
             }
             log.info("[发送失败],url={},response={}", url, response);
