@@ -23,7 +23,7 @@ public class SmsService {
     private final SmsConfigProperties smsConfig;
     private final RestTemplate restTemplate;
 
-    @Async
+    @Async("threadPoolTaskExecutor")
     public void send(String mobile, String templateId, String value) {
         String template = smsConfig.getSmsUrl() + "?mobile=%s&templateId=%s&value=%s";
         log.info("[短信发送],mobile={},templateId={},value={}", mobile, templateId, value);

@@ -1,3 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.leeup.shortlink.common.config.RestTemplateConfig,\
-  com.leeup.shortlink.common.config.SmsConfig
+  com.leeup.shortlink.common.config.SmsConfig,\
+  com.leeup.shortlink.common.config.ExecutorConfig
