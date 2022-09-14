@@ -17,7 +17,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @AllArgsConstructor
 @ConfigurationProperties(prefix = "http")
 public class HttpConfigProperties {
+    private int socketTimeout = 5000;
     private int connectTimeout = 5000;
-    private int readTimeout = 5000;
+    private int connectionRequestTimeout = 1000;
 }
 
