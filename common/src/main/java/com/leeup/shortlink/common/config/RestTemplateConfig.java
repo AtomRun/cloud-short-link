@@ -41,7 +41,8 @@ public class RestTemplateConfig {
         manager.setMaxTotal(500);
         // 最大路由数，对maxTotal的细分，每个主机的并发最大是300，route指的是域名
         // 例如只请求a.com 最大并发只有300
-        // 同时请求了b.com 最大并发只有200，因为不能超过maxTotal
+
+        // 同时请求了a/b.com 每个主机的最大并发不能超过300，即DefaultMaxPerRoute,加起来不能超过maxTotal
         manager.setDefaultMaxPerRoute(300);
 
         RequestConfig requestConfig = RequestConfig.custom()
