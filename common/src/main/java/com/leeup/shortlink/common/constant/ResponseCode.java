@@ -10,7 +10,7 @@ import lombok.Getter;
  **/
 @AllArgsConstructor
 @Getter
-public enum responseCode {
+public enum ResponseCode {
 
     /**
      * 短链分组

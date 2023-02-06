@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2022-09-06
  */
 @RestController
-@RequestMapping(Summary.SERVICE_NAME + Summary.VERSION + "/traffic_task")
+@RequestMapping(Summary.SERVICE_NAME + Summary.VERSION + "/traffic-task")
 public class TrafficTaskController {
 
 }
